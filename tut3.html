@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+<style>
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    .table1{
+        background-color: green;
+        color: white;
+        font-size: 50px;
+        /*font-weight: 900;*/
+        font-weight: bolder;
+        text-align: center;
+    }
+
+    .table2{
+        background-color: gray;
+    }
+    .table2 tr, .table2 td, .table2 th{
+        border: 1px solid red;
+    }
+
+    tr,
+    td,
+    th {
+        border: 1px solid gray;
+    }
+
+    .table1 tr{
+        background-color: blueviolet;
+    }
+
+    td,
+    th {
+        /*padding: 10px;
+        width: 60px;*/
+    }
+
+    /*.head{
+        font-weight: 800;
+    }*/
+    .unorderlist{
+        /* list-style: '$'; */
+        /* list-style: disc; */
+        /* list-style: circle; */
+        list-style: square;
+    }
+    .orderlist{
+        /* list-style: lower-alpha; */
+        /* list-style: upper-alpha; */
+        /* list-style: upper-roman; */
+        list-style: decimal;
+    }
+    .tablecontainer tr:nth-child(odd){
+        background-color: green;
+        color: white;
+    }
+    .tablecontainer tr:nth-child(even){
+        background-color: white;
+        color: black;
+    }
+    tr:hover{
+        background-color: gray;
+        font-size: 40px;
+    }
+    li:hover{
+        font-size: 40px;
+    }
+</style>
+
+<body>
+    <h3>HTML Table</h3>
+    <table class="table1">
+        <tr class="head">
+            <th>No.</th>
+            <th>Full Name</th>
+            <th>Position</th>
+            <th>Salary</th>
+        </tr>
+        <tr style="text-align: right;">
+            <td>1</td>
+            <td>Bill Gates</td>
+            <td>Founder Microsoft</td>
+            <td>1000</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Steve Jobs</td>
+            <td>Founder Apple</td>
+            <td>1200</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Larry Page</td>
+            <td>Founder Google</td>
+            <td>1100</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Mark Jukarbarg</td>
+            <td>Founder Facebook</td>
+            <td>1300</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <br>
+    <table class="table2">
+        <tr>
+            <th>Day/Period</th>
+            <th>
+                <p>I</p>
+                <span>9:30-10:20</span>
+            </th>
+            <th>
+                <p>I</p>
+                <span>9:30-10:20</span>
+            </th>
+            <th>
+                <p>I</p>
+                <span>9:30-10:20</span>
+            </th>
+            <th>
+                <p>I</p>
+                <span>9:30-10:20</span>
+            </th>
+            <th>
+                <p>I</p>
+                <span>9:30-10:20</span>
+            </th>
+            <th>
+                <p>I</p>
+                <span>9:30-10:20</span>
+            </th>
+            <th>
+                <p>I</p>
+                <span>9:30-10:20</span>
+            </th>
+            <th>
+                <p>II</p>
+                <span>9:30-10:20</span>
+            </th>
+            <th>
+                <p>II</p>
+                <span>9:30-10:20</span>
+            </th>
+        </tr>
+        <tr>
+            <td>Monday</td>
+            <td>Eng</td>
+            <td>Mat</td>
+            <td>Che</td>
+            <td rowspan="6">LUNCH</td>
+            <td colspan="3">Lab</td>
+            <td>Phy</td>
+        </tr>
+        <tr>
+            <td>Tuesday</td>
+            <td colspan="3">Lab</td>
+            <td></td>
+            <td>Eng</td>
+            <td>Che</td>
+            <td>Mat</td>
+            <td>Sports</td>
+        </tr>
+        <tr>
+            <td>Wed</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Thu</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Fri</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Sat</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    
+    <h3>HTML List</h3>
+
+    <!-- unorder list style type:  disc, circle, square, none-->
+
+    <ul class="unorderlist">
+        <li>Ankit</li>
+        <li>Ram</li>
+        <li>Shaym</li>
+        <li>Vishnu</li>
+    </ul>
+
+    <!-- unorder list style type:  upper-alpha, lower-alpha, decimal, upper-roman, lower-roman, none-->
+    <ol class="orderlist">
+        <li>Ankit</li>
+        <li>Ram</li>
+        <li>Shaym</li>
+        <li>Vishnu</li>
+    </ol>
+
+    <table class="tablecontainer">
+        <tr>
+            <th>No.</th>
+            <th>Full Name</th>
+            <th>Position</th>
+            <th>Salary</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Bill Gates</td>
+            <td>Founder Microsoft</td>
+            <td>1000</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Steve Jobs</td>
+            <td>Founder Apple</td>
+            <td>1200</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Larry Page</td>
+            <td>Founder Google</td>
+            <td>1100</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Mark Jukarbarg</td>
+            <td>Founder Facebook</td>
+            <td>1300</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
